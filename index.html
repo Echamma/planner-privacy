@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Planner</title>
+<meta name="description" content="Privacy policy for the Planner app. Nothing is collected, nothing is transmitted, everything stays on your device.">
+<style>
+  :root {
+    --desk-top: #33302b;
+    --desk-bottom: #26241f;
+    --paper: #faf6ee;
+    --paper-gutter: #f2ece0;
+    --ink: #211f1b;
+    --ink-soft: #35322c;
+    --ink-body: #4a463e;
+    --ink-muted: #8b8578;
+    --ink-faint: #a39c8d;
+    --rule: rgba(43, 70, 96, 0.18);
+    --rule-strong: rgba(43, 70, 96, 0.34);
+    --pen: #2b5f7d;
+    --pencil: #b23a2e;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 32px 16px 72px;
+    background: linear-gradient(180deg, var(--desk-top) 0%, var(--desk-bottom) 100%);
+    background-attachment: fixed;
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--ink-body);
+    line-height: 1.65;
+  }
+
+  main {
+    max-width: 46rem;
+    margin: 0 auto;
+    background: var(--paper);
+    background-image: radial-gradient(rgba(43, 70, 96, 0.14) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 16px 14px;
+    border-radius: 3px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.42), 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: clamp(28px, 6vw, 56px);
+  }
+
+  .stamp {
+    font-family: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin: 0;
+  }
+
+  h1 {
+    font-family: Newsreader, Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: clamp(2rem, 6vw, 2.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 12px 0 10px;
+  }
+
+  .rule {
+    border: 0;
+    border-top: 1.5px solid rgba(33, 31, 27, 0.72);
+    margin: 0 0 10px;
+  }
+
+  .updated {
+    font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 30px;
+  }
+
+  h2 {
+    font-family: Newsreader, Georgia, serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--ink);
+    margin: 38px 0 10px;
+  }
+
+  p { margin: 0 0 14px; max-width: 62ch; }
+
+  .lede {
+    font-size: 1.06rem;
+    color: var(--ink-soft);
+    border-left: 2px solid var(--pen);
+    background: rgba(207, 228, 242, 0.4);
+    border-radius: 0 2px 2px 0;
+    padding: 16px 18px;
+    margin-bottom: 8px;
+  }
+
+  .nothing {
+    font-family: Newsreader, Georgia, serif;
+    font-size: 1.9rem;
+    color: var(--pencil);
+    margin: 6px 0 18px;
+  }
+
+  .table-wrap { overflow-x: auto; margin: 0 0 18px; }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 24rem;
+    font-size: 0.94rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 14px 10px 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  th {
+    font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+    font-size: 0.64rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    border-bottom-color: var(--rule-strong);
+  }
+
+  td:first-child { color: var(--ink-soft); font-weight: 500; white-space: nowrap; }
+
+  a { color: var(--pen); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { color: var(--pencil); }
+
+  footer {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--rule-strong);
+  }
+
+  footer p {
+    font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    color: var(--ink-faint);
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="stamp">Planner</p>
+  <h1>Privacy Policy</h1>
+  <hr class="rule">
+  <p class="updated">Last updated 6 August 2026</p>
+
+  <p class="lede">
+    Planner collects nothing, transmits nothing, and stores everything on your own
+    device. There is no account, no server, and no analytics.
+  </p>
+
+  <h2>What the app stores</h2>
+  <p>
+    Everything you write — time blocks, tasks, notes, habits, log entries, goals
+    and deadlines — is saved in a database inside the app's private storage on
+    your phone. Android prevents other applications from reading it.
+  </p>
+
+  <h2>What leaves your device</h2>
+  <p class="nothing">Nothing.</p>
+  <p>
+    Planner does not request internet access. It holds no network permission, so
+    it is not technically capable of sending your information anywhere — to us or
+    to anyone else. There is no advertising, no analytics, no crash reporting and
+    no third-party component of any kind.
+  </p>
+  <p>
+    This is verifiable rather than promised: the app declares exactly three
+    permissions, and none of them permit network access.
+  </p>
+
+  <h2>Permissions</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th scope="col">Permission</th><th scope="col">Why it is used</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Notifications</td>
+          <td>To show reminders for your time blocks and the daily summary</td>
+        </tr>
+        <tr>
+          <td>Run at startup</td>
+          <td>To restore your scheduled reminders after the phone restarts</td>
+        </tr>
+        <tr>
+          <td>Alarms &amp; reminders</td>
+          <td>So a reminder set for a particular time arrives at that time</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>None of these involve collecting or transmitting information.</p>
+
+  <h2>Backups</h2>
+  <p>
+    If you have Android's system backup switched on, your phone's operating system
+    may include this app's data in your device backup, which is handled by Google
+    under their own privacy policy. That is a function of Android rather than of
+    this app, and you can exclude Planner in your device's backup settings.
+  </p>
+
+  <h2>Deleting your data</h2>
+  <p>
+    Uninstalling the app permanently deletes everything it stored. You can also
+    clear it at any time from Android's app settings, under Storage.
+  </p>
+  <p>
+    Because we never receive your information, there is nothing for us to delete
+    at our end and no request you need to make of us.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    The app is suitable for all ages and does not knowingly collect information
+    from anyone, including children.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes, the updated version will be published at this address
+    with a new date at the top.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy:
+    <a href="mailto:elias.shammax@gmail.com">elias.shammax@gmail.com</a>
+  </p>
+
+  <footer>
+    <p>Planner · A two-page paper planner that stays on your phone</p>
+  </footer>
+</main>
+</body>
+</html>
