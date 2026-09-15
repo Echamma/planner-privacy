@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Planner</title>
-<meta name="description" content="Privacy policy for the Planner app. Nothing is collected, nothing is transmitted, everything stays on your device.">
+<meta name="description" content="Privacy policy for the Planner app. No account, no cloud service, no analytics. Your planner stays on your device, or on a computer you pair it with yourself.">
 <style>
   :root {
     --desk-top: #33302b;
@@ -159,11 +159,13 @@
   <p class="stamp">Planner</p>
   <h1>Privacy Policy</h1>
   <hr class="rule">
-  <p class="updated">Last updated 6 August 2026</p>
+  <p class="updated">Last updated 15 September 2026</p>
 
   <p class="lede">
-    Planner collects nothing, transmits nothing, and stores everything on your own
-    device. There is no account, no server, and no analytics.
+    Planner has no account, no cloud service and no analytics. Everything you
+    write is stored on your own device. The app can optionally be paired with a
+    Planner server that you run on your own computer &mdash; nothing is ever sent
+    to us, or to any third party.
   </p>
 
   <h2>What the app stores</h2>
@@ -172,18 +174,42 @@
     and deadlines — is saved in a database inside the app's private storage on
     your phone. Android prevents other applications from reading it.
   </p>
+  <p>
+    If you pair the app with your own computer, it also stores that computer's
+    address and a token the computer issued, so it does not have to be paired
+    again each time.
+  </p>
 
   <h2>What leaves your device</h2>
-  <p class="nothing">Nothing.</p>
+  <p class="nothing">Nothing, until you pair.</p>
   <p>
-    Planner does not request internet access. It holds no network permission, so
-    it is not technically capable of sending your information anywhere — to us or
-    to anyone else. There is no advertising, no analytics, no crash reporting and
-    no third-party component of any kind.
+    There is no service for us to send anything to. The only address the app will
+    ever contact is one you type in yourself during pairing, pointing at a Planner
+    server running on a machine you control, on your own network. There is no
+    advertising, no analytics, no crash reporting and no third-party component of
+    any kind.
   </p>
   <p>
-    This is verifiable rather than promised: the app declares exactly three
-    permissions, and none of them permit network access.
+    If you never pair, nothing leaves your phone.
+  </p>
+
+  <h2>When you do pair</h2>
+  <p>
+    Pairing sends your phone's model name &mdash; &ldquo;Pixel 8&rdquo;, for
+    example &mdash; to that computer, so you can tell your devices apart in its
+    list. The computer sends back a token, which the app stores to identify itself
+    afterwards.
+  </p>
+  <p>
+    Your planner content travels only between your phone and the computer you
+    paired with. It does not pass through us or through anyone else, because there
+    is nothing in between.
+  </p>
+  <p>
+    This traffic is not encrypted. It is plain HTTP across your own local network,
+    a deliberate trade for a connection that never leaves your home &mdash; but it
+    does mean anyone already on that network could read it. Do not pair over Wi-Fi
+    you do not trust.
   </p>
 
   <h2>Permissions</h2>
@@ -193,6 +219,21 @@
         <tr><th scope="col">Permission</th><th scope="col">Why it is used</th></tr>
       </thead>
       <tbody>
+        <tr>
+          <td>Internet</td>
+          <td>To reach the Planner server on your own computer, at an address you
+              supply. The app contacts no other address</td>
+        </tr>
+        <tr>
+          <td>Local network</td>
+          <td>Newer Android versions ask for this separately, so the app can find and
+              reach that computer on your own network</td>
+        </tr>
+        <tr>
+          <td>Nearby devices</td>
+          <td>For an optional direct Bluetooth link to your own computer. It is used
+              only if you choose that connection</td>
+        </tr>
         <tr>
           <td>Notifications</td>
           <td>To show reminders for your time blocks and the daily summary</td>
@@ -208,7 +249,10 @@
       </tbody>
     </table>
   </div>
-  <p>None of these involve collecting or transmitting information.</p>
+  <p>
+    Only the first three involve a connection at all, and only towards a machine
+    you nominated yourself.
+  </p>
 
   <h2>Backups</h2>
   <p>
@@ -217,11 +261,20 @@
     under their own privacy policy. That is a function of Android rather than of
     this app, and you can exclude Planner in your device's backup settings.
   </p>
+  <p>
+    The pairing token is deliberately left out of backups. It identifies one
+    phone, so restoring it onto a different one would leave two devices sharing a
+    single credential. Pair again instead.
+  </p>
 
   <h2>Deleting your data</h2>
   <p>
     Uninstalling the app permanently deletes everything it stored. You can also
     clear it at any time from Android's app settings, under Storage.
+  </p>
+  <p>
+    If you paired with your own computer, the copy held there is your own file, on
+    your own machine, for you to delete as you see fit.
   </p>
   <p>
     Because we never receive your information, there is nothing for us to delete
